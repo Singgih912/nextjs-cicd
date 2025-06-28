@@ -77,7 +77,7 @@ jobs:
         REPORT_NAME="zap-report-${TIMESTAMP}.html"
         echo "Report will be saved as: $REPORT_NAME"
 
-        TARGET_URL=${{ needs.vercel.outputs.prod_url }}
+        TARGET_URL="https://restusgh.vercel.app"
         echo "Scanning target: $TARGET_URL"
 
         # ensure the output directory exists
